@@ -1,0 +1,121 @@
+<form>
+    <div class="example-container">
+       <mat-form-field appearance ="outline">
+          <mat-label>ComponyName:</mat-label>
+          <input matInput placeholder="ComponyName" name="componyname" [(ngModel)]="tpobj.componyname">
+       </mat-form-field>
+       
+       <mat-form-field appearance ="outline">
+          <mat-label>No Of Resources:</mat-label>
+          <input matInput placeholder="resources" name="resources" [(ngModel)]="tpobj.resources">
+       </mat-form-field>
+
+       <mat-form-field appearance ="outline">
+            <mat-label>Exp Required:</mat-label>
+          <select placeholder="Exp Required" name="exprequired" [(ngModel)]="tpobj.exprequired" matNativeControl required>
+             <option value="0">Fresher</option>
+             <option value="1">0-3 Month</option>
+             <option value="2">3-6 Month</option>
+             <option value="3">6+ Month</option>
+             <option value="3">Other</option>
+          </select>
+       </mat-form-field>
+
+       <mat-form-field appearance ="outline">
+             <mat-label>CTC:</mat-label>
+             <input matInput placeholder="CTC"  name="ctc" [(ngModel)]="tpobj.ctc">
+       </mat-form-field>
+
+       <mat-form-field appearance ="outline">
+           <mat-label>Joining Criteria:</mat-label>
+         <select placeholder="Joining Criteria"  name="joiningcriteria" [(ngModel)]="tpobj.joiningcriteria" matNativeControl required>
+           <option value="0">No Traning And Direct Joining</option>
+           <option value="1">3 Month intership and then joining</option>
+         </select>
+       </mat-form-field>
+
+       <mat-form-field appearance ="outline">
+          <mat-label>Bond:</mat-label>
+          <input matInput placeholder="bond" name="bond" [(ngModel)]="tpobj.bond">
+       </mat-form-field>
+
+       <mat-form-field appearance ="outline">
+            <mat-label>Position:</mat-label>
+          <select placeholder="Position" name="position" [(ngModel)]="tpobj.position" matNativeControl required>
+             <option value="0">Full stack Developer</option>
+             <option value="1">Ui Developer</option>
+             <option value="2">Middleware and Backend</option>
+             <option value="3">Software Tester</option>
+          </select>
+       </mat-form-field>
+
+       <mat-form-field appearance ="outline">
+          <mat-label>FollowUp:</mat-label>
+          <input matInput placeholder="FollowUp" name="follow" [(ngModel)]="tpobj.follow">
+       </mat-form-field>
+
+       <mat-form-field appearance ="outline">
+            <mat-label>Education Criteria:</mat-label>
+         <select placeholder="Education Criteria" name="educriteria" [(ngModel)]="tpobj.educriteria" matNativeControl required>
+            <option value="0">BE,Comp/It</option>
+            <option value="1">BCA/MCA</option>
+            <option value="2">Other</option>
+         </select>
+       </mat-form-field>
+
+       <mat-form-field appearance ="outline">
+              <mat-label>Current Status:</mat-label>
+           <select placeholder="Current Status" name="currentstatus" [(ngModel)]="tpobj.currentstatus" matNativeControl required>
+              <option value="0">Created</option>
+              <option value="1">Resume Sent</option>
+              <option value="2">Apti Done</option>
+              <option value="3">Assignments Done</option>
+              <option value="4">F2F/HR done</option>
+              <option value="5">Completed</option>
+           </select>
+       </mat-form-field>
+
+       <mat-form-field appearance ="outline">
+             <mat-label>Next Action:</mat-label>
+           <select placeholder="Next Action" name="nextaction" [(ngModel)]="tpobj.nextaction" matNativeControl required>
+              <option value="0">Send Resume</option>
+              <option value="1">Aptitude Test</option>
+              <option value="2">Assignments</option>
+              <option value="3">F2F/HR round</option>
+              <option value="4">Selection</option>
+           </select>
+       </mat-form-field>
+
+      <mat-form-field appearance ="outline">
+        <mat-label>Next Date:</mat-label>
+        <input matInput placeholder="Next Date" name="nextdate" [(ngModel)]="tpobj.nextdate">
+      </mat-form-field>
+
+      <mat-form-field appearance ="outline">
+        <mat-label>Passout Year:</mat-label>
+        <input matInput placeholder="Passoutyear" name="passoutyear" [(ngModel)]="tpobj.passoutyear">
+      </mat-form-field>
+
+      <mat-form-field appearance ="outline">
+        <mat-label>Gap Required:</mat-label>
+           <select placeholder="Gap Required" name="gap" [(ngModel)]="tpobj.gap" matNativeControl required>
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+           </select>
+      </mat-form-field>
+
+      <mat-form-field appearance ="outline">
+        <mat-label>Creation Date:</mat-label>
+        <input matInput placeholder="Creation Date" name="creationdate" [(ngModel)]="tpobj.creationdate">
+      </mat-form-field>
+
+    <mat-form-field appearance ="outline">
+        <mat-label>TPOID:</mat-label>
+        <input matInput placeholder="TPOID" name="tpoid" [(ngModel)]="tpobj.tpoid">
+    </mat-form-field>
+    </div>
+
+    <div class="button">
+       <button type="submit"(click)="updatedata()" mat-raised-button color="primary">update</button>
+    </div>
+</form>
